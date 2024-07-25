@@ -27,7 +27,7 @@ function createScrollDirectionTracker() {
 
     if (currentScrollY > 0) {
       document.getElementById("navbar").style.boxShadow =
-        "0 0 80px 0 #2B245D21";
+        "0 0 20px 0 #2B245D21";
     } else {
       document.getElementById("navbar").style.boxShadow = "none";
     }
@@ -58,3 +58,5 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+AOS.init();

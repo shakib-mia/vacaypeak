@@ -7,6 +7,7 @@
     <title>VacayPeak</title>
     <meta name="title" content="VacayPeak" />
     <meta name="description" content="Explore The World Together" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -97,7 +98,7 @@
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
               ></div>
             </li>
-            <li class="group relative text-lg font-medium lg:px-0">
+            <li class="group relative pb-4 text-lg font-medium lg:px-0 xl:pb-0">
               <a href="#">Blog</a>
               <div
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
@@ -111,41 +112,78 @@
     </nav>
     <header
       style="background-image: url(./assets/hero-image.jpg)"
-      class="mt-16 flex items-center bg-[size:0%] bg-right-bottom bg-no-repeat lg:h-screen lg:bg-[size:48%]"
+      class="mt-16 flex items-center bg-[size:0%] bg-right-bottom bg-no-repeat xl:h-screen xl:bg-[size:48%]"
     >
       <div class="container">
         <img
           src="./assets/hero-image.jpg"
           alt="hero-image"
-          class="mb-10 w-full lg:w-0"
+          class="mx-auto mb-10 w-full lg:w-2/3 xl:w-0"
+          data-aos="fade-in"
         />
-        <div class="lg:w-2/3">
-          <h3 class="font-italianno text-primary">Travel with VacayPeak</h3>
+        <div class="text-center xl:w-2/3 xl:text-left">
+          <h3
+            class="font-italianno text-primary"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            Travel with VacayPeak
+          </h3>
           <!-- <h1 class="flex items-center">
             Explore <img src="./assets/header-image.jpg" alt="" /> The World
             Together
           </h1> -->
-          <h1 class="items-start gap-4 font-montserrat lg:flex lg:items-center">
+          <h1
+            class="items-start gap-4 font-montserrat xl:flex xl:items-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             Explore
             <img
               src="./assets/header-image.jpg"
               alt=""
-              class="hidden lg:block"
+              class="hidden xl:block"
             />
             The
           </h1>
-          <h1 class="font-montserrat lg:mt-4">World Together</h1>
+          <h1
+            class="font-montserrat lg:mt-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            World Together
+          </h1>
 
-          <p class="mt-4 text-gray lg:w-9/12">
+          <p
+            class="mx-auto mt-4 text-gray lg:mx-0 lg:w-9/12"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             At VacayPeak, we believe that travel is more than just a vacation
             it's an opportunity to create unforgettable memories and experience
             the wonders of the world.
           </p>
 
-          <div class="mt-6 flex flex-col items-center gap-2 lg:flex-row">
-            <button>Explore More</button>
+          <div
+            class="mt-6 flex flex-col items-center justify-center gap-4 lg:flex-row xl:justify-normal xl:gap-2"
+          >
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <button>Explore More</button>
+            </div>
 
-            <div class="flex items-center gap-2">
+            <div
+              class="flex items-center gap-2"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
               <div class="relative h-11 w-4/12">
                 <img
                   src="./assets/customers/Ellipse 10.jpg"
@@ -175,10 +213,13 @@
 
           <div
             class="mt-14 grid grid-cols-1 gap-4 rounded-2xl bg-white p-6 shadow-[0_0_30px_2px_#3636361A] md:grid-cols-2 lg:grid-cols-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
           >
             <aside>
-              <label for="destination">Destination</label>
-              <div class="relative mt-4">
+              <label class="text-left" for="destination">Destination</label>
+              <div class="relative mt-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -201,7 +242,7 @@
 
                 <input
                   type="text"
-                  class="bg-light h-full w-full rounded-full p-4 pl-10 focus:outline-none"
+                  class="h-full w-full rounded-full bg-light p-4 pl-10 focus:outline-none"
                   placeholder="Dhaka"
                   id="destination"
                 />
@@ -209,8 +250,8 @@
             </aside>
 
             <aside>
-              <label for="date">Date</label>
-              <div class="relative mt-4">
+              <label class="text-left" for="date">Date</label>
+              <div class="relative mt-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -228,7 +269,7 @@
 
                 <input
                   type="date"
-                  class="bg-light h-full w-full rounded-full p-4 py-3 pl-10 focus:outline-none"
+                  class="h-full w-full rounded-full bg-light p-4 py-3 pl-10 focus:outline-none"
                   placeholder="Dhaka"
                   id="date"
                 />
@@ -236,23 +277,8 @@
             </aside>
 
             <aside>
-              <label for="guests">guests</label>
-              <div class="relative mt-4">
-                <!-- <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="absolute bottom-0 left-3 top-0 my-auto size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                  />
-                </svg> -->
-
+              <label class="text-left" for="guests">Guests</label>
+              <div class="relative mt-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -270,7 +296,7 @@
 
                 <input
                   type="text"
-                  class="bg-light h-full w-full rounded-full p-4 pl-10 focus:outline-none"
+                  class="h-full w-full rounded-full bg-light p-4 pl-10 focus:outline-none"
                   placeholder="Guests"
                   id="guests"
                 />
@@ -283,6 +309,106 @@
       </div>
     </header>
 
+    <section class="mt-24 bg-light py-24">
+      <div class="container">
+        <h3 class="subheading" data-aos="fade-right" data-aos-duration="1000">
+          Why Us
+        </h3>
+        <h2
+          class="mx-auto mt-2 text-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <!-- <div class=""> -->
+          <aside class="flex justify-center gap-2">
+            We
+            <img
+              src="./assets/why-us-heading.jpg"
+              class="h-9 rounded-full border-2 border-primary"
+              alt="why-us-heading"
+            />
+            Plan the Best
+          </aside>
+
+          <aside>Trips for Your Holiday</aside>
+          <!-- </div> -->
+        </h2>
+
+        <p
+          class="mx-auto mt-4 w-full text-center lg:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          Our expert team takes care of every detail, ensuring a seamless and
+          stress-free holiday. From hand-picked destinations to personalized
+          itineraries
+        </p>
+
+        <div class="mt-10 grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3">
+          <div data-aos="fade-up" data-aos-duration="800">
+            <div
+              class="h-full cursor-grab rounded-lg bg-white p-7 text-center transition duration-500 hover:shadow-lg lg:p-14"
+            >
+              <img
+                src="./assets/services/calculate-weather.jpg"
+                alt="calculate-weather"
+                class="mx-auto"
+              />
+
+              <h4 class="mt-8 font-semibold">Calculate Weather</h4>
+              <p class="mt-4 capitalize">
+                Understanding the weather is crucial for a perfect trip. We
+                provide accurate, up-to-date weather forecasts for your
+                destination, ensuring you're always prepared
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div
+              class="h-full cursor-grab rounded-lg bg-white p-7 text-center transition duration-500 hover:shadow-lg lg:p-14"
+            >
+              <img
+                src="./assets/services/best-tour-guide.jpg"
+                alt="calculate-weather"
+                class="mx-auto"
+              />
+
+              <h4 class="mt-8 font-semibold">Best Tour Guide</h4>
+              <p class="mt-4 capitalize">
+                Our tour guides are the heart of our travel experiences. With
+                extensive local knowledge and a passion for sharing unique
+                insights, they transform every trip into an unforgettable
+                adventure.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div
+              class="h-full cursor-grab rounded-lg bg-white p-7 text-center transition duration-500 hover:shadow-lg lg:p-14"
+            >
+              <img
+                src="./assets/services/customization.jpg"
+                alt="calculate-weather"
+                class="mx-auto"
+              />
+
+              <h4 class="mt-8 font-semibold">Customization</h4>
+              <p class="mt-4 capitalize">
+                Every traveler is unique, and so is every trip we plan. Our
+                personalized itineraries cater to your preferences, interests,
+                and budget, ensuring your holiday is exactly what you dream
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
