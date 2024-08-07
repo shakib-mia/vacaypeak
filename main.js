@@ -60,3 +60,36 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 AOS.init();
+
+$(document).ready(function () {
+  const $carousel = $(".owl-carousel").owlCarousel({
+    items: 1,
+    nav: true,
+    onTranslated: updateNavButtons,
+    onInitialized: updateNavButtons,
+  });
+
+  $("#prev").click((e) => {
+    e.preventDefault();
+    $(".owl-prev").click();
+  });
+
+  $("#next").click((e) => {
+    e.preventDefault();
+    $(".owl-next").click();
+  });
+
+  function updateNavButtons() {
+    if ($(".owl-prev").hasClass("disabled")) {
+      $("#prev").attr("disabled", true);
+    } else {
+      $("#prev").attr("disabled", false);
+    }
+
+    if ($(".owl-next").hasClass("disabled")) {
+      $("#next").attr("disabled", true);
+    } else {
+      $("#next").attr("disabled", false);
+    }
+  }
+});

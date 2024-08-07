@@ -32,6 +32,14 @@ h4 {
   @apply text-base md:text-lg lg:text-xl xl:text-2xl;
 }
 
+h5 {
+  @apply text-base md:text-lg lg:text-lg xl:text-xl;
+}
+
+.lg {
+  @apply text-xl;
+}
+
 nav ul {
   @apply absolute left-0 top-14 flex h-0 w-full flex-col gap-8 overflow-y-hidden bg-white px-4 py-0 shadow-[0_25px_35px_0_#2B245D21] transition-[height] duration-500 ease-in lg:static lg:h-auto lg:flex-row lg:justify-center lg:overflow-y-visible lg:px-0 lg:shadow-none;
 }
@@ -45,11 +53,15 @@ nav #nav-check:checked + ul li {
 }
 
 button {
-  @apply text-nowrap rounded-lg bg-primary px-4 py-4 text-white ring-primary ring-offset-2 transition hover:bg-primary-dark active:ring-2 lg:px-8 lg:py-4;
+  @apply text-nowrap rounded-lg bg-primary px-4 py-4 font-montserrat text-white ring-primary ring-offset-2 transition hover:bg-primary-dark active:ring-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:!bg-transparent disabled:hover:!text-primary lg:px-8 lg:py-4;
 }
 
 button.sm {
-  @apply rounded-full px-4 py-0 leading-[22px];
+  @apply rounded-full px-4 py-1 leading-[22px];
+}
+
+button.btn-outline {
+  @apply rounded-lg border border-primary bg-transparent text-black hover:text-primary;
 }
 
 .subheading {
@@ -73,4 +85,8 @@ button.sm {
 #flight:checked ~ #flight-check img,
 #hotel:checked ~ #hotel-check img {
   @apply grayscale-0;
+}
+
+.owl-nav {
+  @apply hidden;
 }

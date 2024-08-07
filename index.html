@@ -8,6 +8,20 @@
     <meta name="title" content="VacayPeak" />
     <meta name="description" content="Explore The World Together" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -843,7 +857,7 @@
           to extraordinary adventures
         </p>
 
-        <div class="mt-10 grid grid-cols-3 gap-5">
+        <div class="mb-6 mt-10 grid grid-cols-2 gap-5 lg:grid-cols-3">
           <div
             class="bg-white px-6 py-2 text-center shadow-[1px_1px_30px_4px_#D6C7B940]"
             data-aos="fade-left"
@@ -877,7 +891,453 @@
       </aside>
     </section>
 
+    <!-- Testimonial Section -->
+
+    <section
+      class="bg-[szie:165%] bg-center"
+      style="background-image: url(./assets/testimonials.jpeg)"
+    >
+      <div class="h-full bg-secondary bg-opacity-95 py-24">
+        <div class="container">
+          <h3
+            class="subheading text-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            About Us
+          </h3>
+
+          <div
+            class="mt-4 flex justify-center gap-2 text-white"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <h2>Our</h2>
+            <img
+              src="./assets/testimonials-header.jpg"
+              alt="testimonials-header"
+              class="hidden rounded-full lg:block"
+            />
+            <h2>Happy Travelers Speak</h2>
+          </div>
+
+          <div
+            class="mt-10 grid grid-cols-1 items-center gap-16 lg:grid-cols-2"
+          >
+            <aside class="relative">
+              <img
+                src="./assets/testimonials.jpeg"
+                class="relative z-10 rounded-lg"
+                alt=""
+              />
+              <div
+                class="absolute left-6 top-6 z-0 h-full w-full rounded-lg border border-primary"
+              ></div>
+            </aside>
+
+            <aside class="text-white lg:p-8">
+              <!-- <p class="mb-6">
+                Vacaypeak made our family holiday unforgettable. Their
+                personalized service and expert advice ensured we saw the best
+                sights and had memorable experiences. The whole process was
+                seamless and stress-free. Highly recommend their services!"
+              </p>
+
+              <div class="flex items-center gap-4">
+                <img
+                  src="./assets/testmonial.jpg"
+                  class="h-14 w-14 rounded-full border-[1.5px] border-primary object-cover"
+                  alt=""
+                />
+
+                <aside class="lg">
+                  <p class="font-semibold">Michael Smith</p>
+                  <p class="font-semibold text-gray">Los Angeles, CA</p>
+                </aside>
+              </div> -->
+              <div class="owl-carousel">
+                <div>
+                  <p class="mb-6">
+                    Vacaypeak made our family holiday unforgettable. Their
+                    personalized service and expert advice ensured we saw the
+                    best sights and had memorable experiences. The whole process
+                    was seamless and stress-free. Highly recommend their
+                    services!"
+                  </p>
+
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/testmonial.jpg"
+                      class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
+                      alt=""
+                    />
+
+                    <aside class="lg">
+                      <p class="font-semibold">Michael Smith</p>
+                      <p class="font-semibold text-gray">Los Angeles, CA</p>
+                    </aside>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="mb-6">
+                    Vacaypeak made our family holiday unforgettable. Their
+                    personalized service and expert advice ensured we saw the
+                    best sights and had memorable experiences. The whole process
+                    was seamless and stress-free. Highly recommend their
+                    services!"
+                  </p>
+
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/testmonial.jpg"
+                      class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
+                      alt=""
+                    />
+
+                    <aside class="lg">
+                      <p class="font-semibold">Michael Smith</p>
+                      <p class="font-semibold text-gray">Los Angeles, CA</p>
+                    </aside>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="mb-6">
+                    Vacaypeak made our family holiday unforgettable. Their
+                    personalized service and expert advice ensured we saw the
+                    best sights and had memorable experiences. The whole process
+                    was seamless and stress-free. Highly recommend their
+                    services!"
+                  </p>
+
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/testmonial.jpg"
+                      class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
+                      alt=""
+                    />
+
+                    <aside class="lg">
+                      <p class="font-semibold">Michael Smith</p>
+                      <p class="font-semibold text-gray">Los Angeles, CA</p>
+                    </aside>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 flex gap-8">
+                <button
+                  class="aspect-square w-10 rounded-full border-2 border-primary bg-transparent !p-0 text-primary hover:!bg-primary hover:text-white"
+                  id="prev"
+                >
+                  <i class="fas fa-arrow-left"></i>
+                </button>
+                <button
+                  class="aspect-square w-10 rounded-full border-2 border-primary bg-transparent !p-0 text-primary hover:!bg-primary hover:text-white"
+                  id="next"
+                >
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-24">
+      <div class="container">
+        <h3
+          class="subheading !inline-block !bg-left px-5 !text-left"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Gallery
+        </h3>
+
+        <h2 data-aos="fade-right" data-aos-duration="1000">
+          Visit our Previous tour gallery
+        </h2>
+
+        <div
+          class="mt-7 grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-6"
+          id="gallery-image"
+        >
+          <aside class="flex flex-col gap-3 lg:gap-6">
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-down"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 613.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-up"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 614.jpg"
+                alt=""
+              />
+            </div>
+          </aside>
+
+          <aside class="flex flex-col gap-3 lg:gap-6">
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-down"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 615.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-up"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 619.jpg"
+                alt=""
+              />
+            </div>
+          </aside>
+
+          <aside class="flex flex-col gap-3 lg:gap-6">
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-down"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 616.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-up"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 617.jpg"
+                alt=""
+              />
+            </div>
+          </aside>
+
+          <aside class="flex flex-col gap-3 lg:gap-6">
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-down"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 620.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="cursor-auto overflow-hidden rounded-lg"
+              data-aos="fade-up"
+              data-aos-anchor="#gallery-image"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
+              <img
+                class="h-full w-full transition hover:!scale-125"
+                src="./assets/gallery/Rectangle 621.jpg"
+                alt=""
+              />
+            </div>
+          </aside>
+        </div>
+
+        <div class="mt-14 flex justify-center">
+          <button>View All Images</button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[size:100%_cover] bg-no-repeat py-24"
+      style="background-image: url(./assets/travel-packages.png)"
+    >
+      <div class="container">
+        <h3
+          class="subheading !inline-block !bg-[size:100%_100%] !bg-left px-5 !text-left"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Featured Destination
+        </h3>
+
+        <div
+          class="mt-4 flex gap-2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <h2>Popular</h2>
+          <img
+            src="./assets/testimonials-header.jpg"
+            alt="testimonials-header"
+            class="hidden rounded-full lg:block"
+          />
+          <h2>Travel Packages</h2>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="group rounded-2xl bg-white p-3 shadow-[0_4px_22px_0_#00000014] hover:shadow-[0_4px_10px_0_#00000014]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/packages/Exotic Carinnean Gateway.jpg"
+              alt="exotic caribbean Gateway"
+              class="w-full rounded-t-lg grayscale transition group-hover:grayscale-0"
+            />
+
+            <h5 class="mt-3 font-poppins font-medium">
+              Exotic Caribbean Getaway
+            </h5>
+
+            <p class="my-4 font-montserrat text-blue">
+              Escape to the sun-drenched shores of the Caribbean, where
+              crystal-clear waters, swaying palms, and luxurious resorts await
+              for the ultimate tropical vacation.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa fa-compass text-primary"></i>
+                <p class="text-gray">4 Days 5 Night</p>
+              </div>
+
+              <h5 class="font-poppins font-medium text-primary">$350</h5>
+            </div>
+
+            <button class="btn-outline sm mt-5">Package Details</button>
+          </article>
+
+          <article
+            class="group rounded-2xl bg-white p-3 shadow-[0_4px_22px_0_#00000014] hover:shadow-[0_4px_10px_0_#00000014]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src="./assets/packages/Explore Majestic Europe.jpg"
+              alt="Explore Majestic Europe"
+              class="w-full rounded-t-lg grayscale transition group-hover:grayscale-0"
+            />
+
+            <h5 class="mt-3 font-poppins font-medium">
+              Explore Majestic Europe
+            </h5>
+
+            <p class="my-4 font-montserrat text-blue">
+              Embark on an enchanting journey through the iconic cities of
+              Europe, from the canals of Venice to the historic streets of Rome
+              and the vibrant energy of Paris.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa fa-compass text-primary"></i>
+                <p class="text-gray">3 Days 4 Night</p>
+              </div>
+
+              <h5 class="font-poppins font-medium text-primary">$270</h5>
+            </div>
+
+            <button class="btn-outline sm mt-5">Package Details</button>
+          </article>
+
+          <article
+            class="group rounded-2xl bg-white p-3 shadow-[0_4px_22px_0_#00000014] hover:shadow-[0_4px_10px_0_#00000014]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="./assets/packages/Adventurous New Zealand.jpg"
+              alt="Adventurous New Zealand"
+              class="w-full rounded-t-lg grayscale transition group-hover:grayscale-0"
+            />
+
+            <h5 class="mt-3 font-poppins font-medium">
+              Adventurous New Zealand
+            </h5>
+
+            <p class="my-4 font-montserrat text-blue">
+              Discover the natural wonders of New Zealand, from soaring
+              mountains to pristine glaciers, on an action-packed adventure
+              filled with hiking, kayaking.
+            </p>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa fa-compass text-primary"></i>
+                <p class="text-gray">6 Days 7 Night</p>
+              </div>
+
+              <h5 class="font-poppins font-medium text-primary">$650</h5>
+            </div>
+
+            <button class="btn-outline sm mt-5">Package Details</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
