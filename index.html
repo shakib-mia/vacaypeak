@@ -26,7 +26,7 @@
   </head>
   <body>
     <nav
-      class="fixed left-0 top-0 z-[9999999999999] w-full bg-white"
+      class="fixed left-0 top-0 z-[9999999999999] w-screen bg-white"
       id="navbar"
     >
       <div class="relative">
@@ -928,11 +928,11 @@
             <aside class="relative">
               <img
                 src="./assets/testimonials.jpeg"
-                class="relative z-10 rounded-lg"
+                class="relative -left-2 -top-2 z-10 rounded-lg"
                 alt=""
               />
               <div
-                class="absolute left-6 top-6 z-0 h-full w-full rounded-lg border border-primary"
+                class="absolute left-2 top-2 z-0 h-full w-full rounded-lg border border-primary lg:left-6 lg:top-6"
               ></div>
             </aside>
 
@@ -1317,6 +1317,50 @@
 
             <button class="btn-outline sm mt-5">Package Details</button>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-opacity-10 bg-cover bg-no-repeat"
+      style="background-image: url(./assets/subscribe-bg.jpeg)"
+    >
+      <div class="w-full bg-secondary bg-opacity-90 py-24 text-white">
+        <div
+          class="container grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-24"
+        >
+          <aside>
+            <h2 data-aos="fade-right" data-aos-duration="1000">
+              Stay up-to-date with our latest travel tips & stories.
+            </h2>
+            <div
+              class="relative mt-6 flex rounded-lg bg-white p-1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="absolute left-0 top-0 z-0 h-full w-full rounded-lg p-4 text-black focus:outline-none"
+                placeholder="Enter Your Email Address Here"
+              />
+              <button class="relative z-10 ml-auto">Subscribe Now</button>
+            </div>
+          </aside>
+          <aside class="relative">
+            <img
+              src="./assets/subscribe-image.jpeg"
+              class="relative -left-2 -top-2 z-10 rounded-2xl border-[3px] border-primary"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+
+            <div
+              class="absolute left-2 top-2 h-full w-full rounded-2xl border-[3px] border-primary lg:left-8 lg:top-8"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            ></div>
+          </aside>
         </div>
       </div>
     </section>

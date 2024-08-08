@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply text-base;
+  @apply w-screen overflow-x-hidden text-base;
 }
 
 h1 {
