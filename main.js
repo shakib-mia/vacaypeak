@@ -59,7 +59,9 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 $(document).ready(function () {
   const $carousel = $(".owl-carousel").owlCarousel({
