@@ -7,7 +7,14 @@
     <title>VacayPeak</title>
     <meta name="title" content="VacayPeak" />
     <meta name="description" content="Explore The World Together" />
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Animate on Scroll Cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- owl carousel cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -22,20 +29,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav
       class="fixed left-0 top-0 z-[9999999999999] w-screen bg-white"
       id="navbar"
     >
       <div class="relative">
         <div class="container flex items-center justify-between py-4 lg:py-6">
+          <!-- Logo Section -->
           <a href="#">
+            <!-- The logo image that links back to the homepage -->
             <img src="./assets/logo.webp" alt="logo" class="w-1/2 lg:w-fit" />
           </a>
 
+          <!-- Hamburger Menu for Mobile View -->
+          <!-- This label and input work together to show/hide the menu on small screens -->
           <label for="nav-check" class="lg:hidden">
+            <!-- Icon for the hamburger menu (three horizontal lines) -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -51,23 +65,34 @@
               />
             </svg>
           </label>
-          <input type="checkbox" name="" class="hidden" id="nav-check" />
+          <!-- Checkbox that controls the opening and closing of the mobile menu -->
+          <input type="checkbox" class="hidden" id="nav-check" />
+
+          <!-- Menu Items -->
           <ul class="absolute lg:static">
+            <!-- Home link -->
             <li class="group relative text-lg font-medium lg:px-0">
               <a href="#">Home</a>
+              <!-- Underline animation on hover -->
               <div
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
               ></div>
             </li>
+
+            <!-- About Us link -->
             <li class="group relative text-lg font-medium lg:px-0">
               <a href="#">About Us</a>
+              <!-- Underline animation on hover -->
               <div
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
               ></div>
             </li>
+
+            <!-- Packages dropdown menu -->
             <li class="group relative text-lg font-medium lg:px-0">
-              <a href="#" class="flex items-center gap-2"
-                >Packages
+              <a href="#" class="flex items-center gap-2">
+                <!-- Link to Packages page with a dropdown icon -->
+                Packages
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -83,9 +108,7 @@
                   />
                 </svg>
               </a>
-              <!-- <div
-                class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
-              ></div> -->
+              <!-- Dropdown list that appears on hover -->
               <ul
                 class="absolute top-full flex h-0 w-32 flex-col gap-2 overflow-hidden bg-white shadow-[0_25px_35px_0_#2B245D21] transition-[height] group-hover:h-auto"
               >
@@ -100,42 +123,58 @@
                 </li>
               </ul>
             </li>
+
+            <!-- Hotel link -->
             <li class="group relative text-lg font-medium lg:px-0">
               <a href="#">Hotel</a>
+              <!-- Underline animation on hover -->
               <div
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
               ></div>
             </li>
+
+            <!-- Flight link -->
             <li class="group relative text-lg font-medium lg:px-0">
               <a href="#">Flight</a>
+              <!-- Underline animation on hover -->
               <div
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
               ></div>
             </li>
+
+            <!-- Blog link -->
             <li class="group relative pb-4 text-lg font-medium lg:px-0 xl:pb-0">
               <a href="#">Blog</a>
+              <!-- Underline animation on hover -->
               <div
                 class="mx-auto h-[2px] w-0 bg-primary transition-[width] group-hover:w-3/4"
               ></div>
             </li>
           </ul>
 
+          <!-- Contact Us button for larger screens -->
           <button class="hidden lg:block">Contact Us</button>
         </div>
       </div>
     </nav>
+
     <header
       style="background-image: url(./assets/hero-image.jpg)"
       class="mt-16 flex items-center bg-[size:0%] bg-right-bottom bg-no-repeat xl:h-screen xl:bg-[size:48%]"
     >
+      <!-- Container for the header content -->
       <div class="container">
+        <!-- Hero image with responsive sizing and animation -->
         <img
           src="./assets/hero-image.jpg"
           alt="hero-image"
           class="mx-auto mb-10 w-full lg:w-2/3 xl:w-0"
           data-aos="fade-in"
         />
+
+        <!-- Text content in the header -->
         <div class="text-center xl:w-2/3 xl:text-left">
+          <!-- Subheading with animation -->
           <h3
             class="font-italianno text-primary"
             data-aos="fade-right"
@@ -143,10 +182,8 @@
           >
             Travel with VacayPeak
           </h3>
-          <!-- <h1 class="flex items-center">
-            Explore <img src="./assets/header-image.jpg" alt="" /> The World
-            Together
-          </h1> -->
+
+          <!-- Main heading with an image and animation -->
           <h1
             class="items-start gap-4 font-montserrat xl:flex xl:items-center"
             data-aos="fade-right"
@@ -170,6 +207,7 @@
             World Together
           </h1>
 
+          <!-- Description paragraph with animation -->
           <p
             class="mx-auto mt-4 text-gray lg:mx-0 lg:w-9/12"
             data-aos="fade-right"
@@ -181,6 +219,7 @@
             the wonders of the world.
           </p>
 
+          <!-- Call-to-action buttons and customer trust section -->
           <div
             class="mt-6 flex flex-col items-center justify-center gap-4 lg:flex-row xl:justify-normal xl:gap-2"
           >
@@ -198,6 +237,7 @@
               data-aos-duration="1000"
               data-aos-delay="400"
             >
+              <!-- Customer images with trust statement -->
               <div class="relative h-11 w-4/12">
                 <img
                   src="./assets/customers/Ellipse 10.jpg"
@@ -220,17 +260,18 @@
                   class="absolute left-[60px] top-0 z-0 h-11 w-11 rounded-full"
                 />
               </div>
-
               <p class="w-8/12">Trusted by Over 10,000 Satisfied Customers</p>
             </div>
           </div>
 
+          <!-- Search form section -->
           <div
             class="mt-14 grid grid-cols-1 gap-4 rounded-2xl bg-white p-6 shadow-[0_0_30px_2px_#3636361A] md:grid-cols-2 lg:grid-cols-4"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
+            <!-- Destination input field -->
             <aside>
               <label class="text-left" for="destination">Destination</label>
               <div class="relative mt-2">
@@ -253,7 +294,6 @@
                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                   />
                 </svg>
-
                 <input
                   type="text"
                   class="h-full w-full rounded-full bg-light p-4 pl-10 focus:outline-none"
@@ -263,6 +303,7 @@
               </div>
             </aside>
 
+            <!-- Date input field -->
             <aside>
               <label class="text-left" for="date">Date</label>
               <div class="relative mt-2">
@@ -280,7 +321,6 @@
                     d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                   />
                 </svg>
-
                 <input
                   type="date"
                   class="h-full w-full rounded-full bg-light p-4 py-3 pl-10 focus:outline-none"
@@ -290,6 +330,7 @@
               </div>
             </aside>
 
+            <!-- Guests input field -->
             <aside>
               <label class="text-left" for="guests">Guests</label>
               <div class="relative mt-2">
@@ -307,7 +348,6 @@
                     d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
                   />
                 </svg>
-
                 <input
                   type="text"
                   class="h-full w-full rounded-full bg-light p-4 pl-10 focus:outline-none"
@@ -317,6 +357,7 @@
               </div>
             </aside>
 
+            <!-- Search button -->
             <button class="mt-auto h-fit">Search</button>
           </div>
         </div>
@@ -326,19 +367,23 @@
     <!-- Why Us Section -->
 
     <section class="mt-24 bg-light py-24">
+      <!-- Container for the "Why Us" section -->
       <div class="container">
+        <!-- Subheading for the section -->
         <h3 class="subheading" data-aos="fade-right" data-aos-duration="1000">
           Why Us
         </h3>
+
+        <!-- Main heading with a decorative image in the middle -->
         <h2
           class="mx-auto mt-2 text-center"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="100"
         >
-          <!-- <div class=""> -->
           <aside class="flex justify-center gap-2">
             We
+            <!-- Decorative image related to the "Why Us" heading -->
             <img
               src="./assets/why-us-heading.jpg"
               class="h-9 w-24 rounded-full border-2 border-primary object-cover"
@@ -348,9 +393,9 @@
           </aside>
 
           <aside>Trips for Your Holiday</aside>
-          <!-- </div> -->
         </h2>
 
+        <!-- Description paragraph with centered text -->
         <p
           class="mx-auto mt-4 w-full text-center lg:w-1/2"
           data-aos="fade-right"
@@ -362,11 +407,14 @@
           itineraries
         </p>
 
+        <!-- Grid layout for service cards -->
         <div class="mt-10 grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3">
+          <!-- Service card for "Calculate Weather" -->
           <div data-aos="fade-up" data-aos-duration="800">
             <div
               class="h-full cursor-grab rounded-lg bg-white p-7 text-center transition duration-500 hover:shadow-lg lg:p-14"
             >
+              <!-- Image for "Calculate Weather" service -->
               <img
                 src="./assets/services/calculate-weather.jpg"
                 alt="calculate-weather"
@@ -382,13 +430,15 @@
             </div>
           </div>
 
+          <!-- Service card for "Best Tour Guide" -->
           <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
             <div
               class="h-full cursor-grab rounded-lg bg-white p-7 text-center transition duration-500 hover:shadow-lg lg:p-14"
             >
+              <!-- Image for "Best Tour Guide" service -->
               <img
                 src="./assets/services/best-tour-guide.jpg"
-                alt="calculate-weather"
+                alt="best-tour-guide"
                 class="mx-auto"
               />
 
@@ -402,13 +452,15 @@
             </div>
           </div>
 
+          <!-- Service card for "Customization" -->
           <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <div
               class="h-full cursor-grab rounded-lg bg-white p-7 text-center transition duration-500 hover:shadow-lg lg:p-14"
             >
+              <!-- Image for "Customization" service -->
               <img
                 src="./assets/services/customization.jpg"
-                alt="calculate-weather"
+                alt="customization"
                 class="mx-auto"
               />
 
@@ -430,6 +482,7 @@
       style="background-image: url(./assets/upcoming-bg.jpg)"
     >
       <div class="container">
+        <!-- Subheading for the section -->
         <h3
           class="subheading inline-block w-28 !bg-left"
           data-aos="fade-right"
@@ -437,6 +490,8 @@
         >
           Upcoming
         </h3>
+
+        <!-- Main heading and tabs for deal categories -->
         <div
           class="mt-4 flex flex-col justify-between gap-4 lg:flex-row lg:items-end lg:gap-0"
         >
@@ -446,7 +501,7 @@
             data-aos-duration="1000"
             data-aos-delay="100"
           >
-            <!-- <div class=""> -->
+            <!-- Header with image and text for Hot Deals -->
             <aside class="flex justify-center gap-2 lg:justify-start">
               Our
               <img
@@ -458,10 +513,12 @@
             </aside>
           </h2>
 
+          <!-- Tabs for filtering deals (Trip, Flight, Hotel) -->
           <div
             class="flex h-fit divide-x-2 divide-primary font-poppins font-medium"
             id="tabs"
           >
+            <!-- Tab for Trip deals -->
             <input type="radio" name="deals" class="hidden" id="trip" checked />
             <label
               id="trip-check"
@@ -470,12 +527,13 @@
             >
               <img
                 src="./assets/deals-options/trips.jpg"
-                alt=""
+                alt="Trip Deals"
                 class="h-fit"
               />
               Trip
             </label>
 
+            <!-- Tab for Flight deals -->
             <input type="radio" name="deals" class="hidden" id="flight" />
             <label
               id="flight-check"
@@ -484,12 +542,13 @@
             >
               <img
                 src="./assets/deals-options/flight.jpg"
-                alt=""
+                alt="Flight Deals"
                 class="h-fit"
               />
               Flight
             </label>
 
+            <!-- Tab for Hotel deals -->
             <input type="radio" name="deals" class="hidden" id="hotel" />
             <label
               id="hotel-check"
@@ -498,7 +557,7 @@
             >
               <img
                 src="./assets/deals-options/hotel.jpg"
-                alt=""
+                alt="Hotel Deals"
                 class="h-fit"
               />
               Hotel
@@ -506,22 +565,27 @@
           </div>
         </div>
 
+        <!-- Container for displaying the deals -->
+        <!-- Container for the entire grid of items -->
         <div class="mb-14 mt-8 flex flex-wrap justify-center">
+          <!-- Item 1 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -535,31 +599,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 2 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-1.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -573,31 +639,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 3 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-2.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -611,31 +679,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 4 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-3.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -649,31 +719,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 5 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-4.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -687,31 +759,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 6 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-5.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -725,31 +799,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 7 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-6.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -763,31 +839,33 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
 
+          <!-- Item 8 -->
           <div class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
             <article
               class="group cursor-pointer overflow-hidden rounded-[0.625rem] shadow-[0_8px_16px_0_#00000014] transition hover:shadow-[0_4px_8px_0_#00000014]"
             >
               <div class="overflow-hidden">
+                <!-- Image for the item -->
                 <img
                   src="./assets/deals/Rectangle 598-7.jpg"
                   alt="west-minister-bridge"
                   class="w-full transition group-hover:scale-110"
                 />
               </div>
-
               <div class="p-4">
+                <!-- Title of the item -->
                 <p class="mb-2 font-medium">Westminster Bridge</p>
                 <div class="flex justify-between">
+                  <!-- Review section -->
                   <div class="flex items-center gap-1">
                     <svg
                       width="14"
@@ -801,25 +879,21 @@
                         fill="#FF6F00"
                       />
                     </svg>
-
                     <p class="font-poppins text-sm text-gray">(2.5k Review)</p>
                   </div>
-
+                  <!-- Button to book now -->
                   <button class="sm">Book Now</button>
                 </div>
               </div>
             </article>
           </div>
         </div>
-
-        <div class="flex justify-center">
-          <button>View All Packages</button>
-        </div>
       </div>
     </section>
 
     <!-- About section -->
     <section class="container grid grid-cols-1 items-center lg:grid-cols-2">
+      <!-- Image section with animation on scroll -->
       <img
         src="./assets/about-image.jpg"
         data-aos="fade-right"
@@ -827,7 +901,9 @@
         alt="about-image"
       />
 
+      <!-- Aside section for textual content -->
       <aside>
+        <!-- Section heading with animation on scroll -->
         <h3
           class="subheading inline-block"
           data-aos="fade-left"
@@ -836,14 +912,18 @@
           About Us
         </h3>
 
+        <!-- Content with animation on scroll -->
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
           <h2 class="capitalize">With Our all</h2>
           <h2 class="my-2 flex gap-2 capitalize">
-            <img src="./assets/about-header.jpg" alt="" /> Experience
+            <img src="./assets/about-header.jpg" alt="" />
+            <!-- Image within heading -->
+            Experience
           </h2>
           <h2 class="capitalize">we will serve you</h2>
         </div>
 
+        <!-- Paragraph with animation on scroll -->
         <p
           class="mt-4 font-poppins capitalize"
           data-aos="fade-left"
@@ -857,7 +937,9 @@
           to extraordinary adventures
         </p>
 
+        <!-- Statistics section with animation on scroll -->
         <div class="mb-6 mt-10 grid grid-cols-2 gap-5 lg:grid-cols-3">
+          <!-- Statistic item with animation on scroll -->
           <div
             class="bg-white px-6 py-2 text-center shadow-[1px_1px_30px_4px_#D6C7B940]"
             data-aos="fade-left"
@@ -868,6 +950,7 @@
             <p class="font-poppins font-medium">Successful trip</p>
           </div>
 
+          <!-- Another statistic item with animation on scroll -->
           <div
             class="bg-white px-6 py-2 text-center shadow-[1px_1px_30px_4px_#D6C7B940]"
             data-aos="fade-left"
@@ -875,9 +958,12 @@
             data-aos-delay="300"
           >
             <h4 class="mb-2 font-poppins font-bold text-primary">2k+</h4>
+            <!-- Statistic value -->
             <p class="font-poppins font-medium">Regular Clients</p>
+            <!-- Statistic label -->
           </div>
 
+          <!-- Another statistic item with animation on scroll -->
           <div
             class="bg-white px-6 py-2 text-center shadow-[1px_1px_30px_4px_#D6C7B940]"
             data-aos="fade-left"
@@ -885,7 +971,9 @@
             data-aos-delay="400"
           >
             <h4 class="mb-2 font-poppins font-bold text-primary">10+</h4>
+            <!-- Statistic value -->
             <p class="font-poppins font-medium">Year Experience</p>
+            <!-- Statistic label -->
           </div>
         </div>
       </aside>
@@ -897,8 +985,10 @@
       class="bg-[szie:165%] bg-center"
       style="background-image: url(./assets/testimonials.jpeg)"
     >
+      <!-- Container with a secondary background and padding -->
       <div class="h-full bg-secondary bg-opacity-95 py-24">
         <div class="container">
+          <!-- Section heading with animation on scroll -->
           <h3
             class="subheading text-center"
             data-aos="fade-left"
@@ -907,6 +997,7 @@
             About Us
           </h3>
 
+          <!-- Subheading with animation and layout for text and image -->
           <div
             class="mt-4 flex justify-center gap-2 text-white"
             data-aos="fade-left"
@@ -922,9 +1013,11 @@
             <h2>Happy Travelers Speak</h2>
           </div>
 
+          <!-- Main content section with testimonials and image -->
           <div
             class="mt-10 grid grid-cols-1 items-center gap-16 lg:grid-cols-2"
           >
+            <!-- Image section with border styling -->
             <aside class="relative">
               <img
                 src="./assets/testimonials.jpeg"
@@ -936,43 +1029,47 @@
               ></div>
             </aside>
 
+            <!-- Testimonials section with carousel -->
             <aside class="text-white lg:p-8">
-              <!-- <p class="mb-6">
-                Vacaypeak made our family holiday unforgettable. Their
-                personalized service and expert advice ensured we saw the best
-                sights and had memorable experiences. The whole process was
-                seamless and stress-free. Highly recommend their services!"
-              </p>
-
-              <div class="flex items-center gap-4">
-                <img
-                  src="./assets/testmonial.jpg"
-                  class="h-14 w-14 rounded-full border-[1.5px] border-primary object-cover"
-                  alt=""
-                />
-
-                <aside class="lg">
-                  <p class="font-semibold">Michael Smith</p>
-                  <p class="font-semibold text-gray">Los Angeles, CA</p>
-                </aside>
-              </div> -->
+              <!-- Carousel for displaying multiple testimonials -->
               <div class="owl-carousel">
+                <!-- Testimonial entry -->
                 <div>
                   <p class="mb-6">
                     Vacaypeak made our family holiday unforgettable. Their
                     personalized service and expert advice ensured we saw the
                     best sights and had memorable experiences. The whole process
                     was seamless and stress-free. Highly recommend their
-                    services!"
+                    services!
                   </p>
-
                   <div class="flex items-center gap-4">
                     <img
                       src="./assets/testmonial.jpg"
                       class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
                       alt=""
                     />
+                    <aside class="lg">
+                      <p class="font-semibold">Michael Smith</p>
+                      <p class="font-semibold text-gray">Los Angeles, CA</p>
+                    </aside>
+                  </div>
+                </div>
 
+                <!-- Additional testimonial entries follow similar structure -->
+                <div>
+                  <p class="mb-6">
+                    Vacaypeak made our family holiday unforgettable. Their
+                    personalized service and expert advice ensured we saw the
+                    best sights and had memorable experiences. The whole process
+                    was seamless and stress-free. Highly recommend their
+                    services!
+                  </p>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/testmonial.jpg"
+                      class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
+                      alt=""
+                    />
                     <aside class="lg">
                       <p class="font-semibold">Michael Smith</p>
                       <p class="font-semibold text-gray">Los Angeles, CA</p>
@@ -986,39 +1083,14 @@
                     personalized service and expert advice ensured we saw the
                     best sights and had memorable experiences. The whole process
                     was seamless and stress-free. Highly recommend their
-                    services!"
+                    services!
                   </p>
-
                   <div class="flex items-center gap-4">
                     <img
                       src="./assets/testmonial.jpg"
                       class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
                       alt=""
                     />
-
-                    <aside class="lg">
-                      <p class="font-semibold">Michael Smith</p>
-                      <p class="font-semibold text-gray">Los Angeles, CA</p>
-                    </aside>
-                  </div>
-                </div>
-
-                <div>
-                  <p class="mb-6">
-                    Vacaypeak made our family holiday unforgettable. Their
-                    personalized service and expert advice ensured we saw the
-                    best sights and had memorable experiences. The whole process
-                    was seamless and stress-free. Highly recommend their
-                    services!"
-                  </p>
-
-                  <div class="flex items-center gap-4">
-                    <img
-                      src="./assets/testmonial.jpg"
-                      class="!h-14 !w-14 rounded-full border-[1.5px] border-primary object-cover"
-                      alt=""
-                    />
-
                     <aside class="lg">
                       <p class="font-semibold">Michael Smith</p>
                       <p class="font-semibold text-gray">Los Angeles, CA</p>
@@ -1027,6 +1099,7 @@
                 </div>
               </div>
 
+              <!-- Carousel navigation buttons -->
               <div class="mt-8 flex gap-8">
                 <button
                   class="aspect-square w-10 rounded-full border-2 border-primary bg-transparent !p-0 text-primary hover:!bg-primary hover:text-white"
@@ -1327,7 +1400,7 @@
     >
       <div class="w-full bg-secondary bg-opacity-90 py-24 text-white">
         <div
-          class="container grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-24"
+          class="container grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24"
         >
           <aside>
             <h2 data-aos="fade-right" data-aos-duration="1000">
@@ -1346,17 +1419,17 @@
               <button class="relative z-10 ml-auto">Subscribe Now</button>
             </div>
           </aside>
-          <aside class="relative">
+          <aside class="relative mx-auto w-11/12 lg:w-full">
             <img
               src="./assets/subscribe-image.jpeg"
-              class="relative -left-2 -top-2 z-10 rounded-2xl border-[3px] border-primary"
+              class="relative -left-3 -top-3 z-10 rounded-2xl border-[3px] border-primary"
               alt=""
               data-aos="fade-left"
               data-aos-duration="1000"
             />
 
             <div
-              class="absolute left-2 top-2 h-full w-full rounded-2xl border-[3px] border-primary lg:left-8 lg:top-8"
+              class="absolute left-3 top-3 h-full w-full rounded-2xl border-[3px] border-primary lg:left-8 lg:top-8"
               data-aos="fade-up-left"
               data-aos-duration="1000"
             ></div>
@@ -1364,6 +1437,184 @@
         </div>
       </div>
     </section>
+
+    <footer class="py-6 lg:pb-12 lg:pt-24">
+      <div
+        class="container mb-20 flex flex-wrap justify-between gap-6 lg:gap-0 lg:px-0"
+      >
+        <aside class="w-full pr-4 md:w-1/2 lg:w-1/4">
+          <img src="./assets/logo.webp" alt="logo" />
+          <p class="mt-6 font-poppins capitalize text-blue">
+            we believe that travel is more than just a vacation it's an
+            opportunity to create unforgettable memories and experience the
+            wonders of the world.
+          </p>
+
+          <div class="my-4 flex gap-2">
+            <a
+              href="#"
+              class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary transition hover:bg-primary hover:text-white"
+            >
+              <i class="fa fa-slack"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary transition hover:bg-primary hover:text-white"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary transition hover:bg-primary hover:text-white"
+            >
+              <i class="fa fa-instagram"></i>
+            </a>
+
+            <a
+              href="#"
+              class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary transition hover:bg-primary hover:text-white"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </aside>
+
+        <aside
+          class="grid w-full grid-cols-1 justify-between gap-6 md:w-1/2 md:grid-cols-2 lg:w-1/2 lg:grid-cols-3 lg:gap-0"
+        >
+          <aside>
+            <h5 class="font-medium">Quick Link</h5>
+
+            <ul class="mt-6 flex flex-col gap-6">
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Home</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">About</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Tours</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Contact</a>
+              </li>
+            </ul>
+          </aside>
+
+          <aside>
+            <h5 class="font-medium">Social Link</h5>
+
+            <ul class="mt-6 flex flex-col gap-6">
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Facebook</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Instagram</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">LinkedIn</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Youtube</a>
+              </li>
+            </ul>
+          </aside>
+
+          <aside>
+            <h5 class="font-medium">Payment</h5>
+
+            <ul class="mt-6 flex flex-col gap-6">
+              <!-- <li class="flex items-center gap-2">
+                <i class="far fa-check-circle text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Partner</a>
+              </li> -->
+              <li class="flex items-center gap-2">
+                <i class="fa fa-cc-visa text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Visa</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa fa-cc-mastercard text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Mastercard</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fab fa-cc-paypal text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Paypal</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa fa-cc-stripe text-primary"></i>
+                <a class="transition hover:text-primary" href="#">Stripe</a>
+              </li>
+            </ul>
+          </aside>
+        </aside>
+        <aside class="w-full md:w-1/2 lg:w-1/4">
+          <h5 class="font-medium">Contact Info</h5>
+
+          <div class="mt-6 flex items-center gap-2">
+            <i class="fa fa-phone rotate-90 text-primary"></i>
+            <a href="callto:+833-900-8338" class="transition hover:text-primary"
+              >+833-900-8338</a
+            >
+          </div>
+          <div class="mt-6 flex items-center gap-2">
+            <i class="far fa-envelope text-primary"></i>
+            <a href="callto:+833-900-8338" class="transition hover:text-primary"
+              >support@raddito.com</a
+            >
+          </div>
+
+          <div class="mt-6 flex gap-2">
+            <i class="fa-solid fa-location-dot mt-1 text-primary"></i>
+            <p class="transition hover:text-primary">
+              818 22nd Ave NW Saint Paul, <br />
+              MN 55112-6629 USA
+            </p>
+          </div>
+        </aside>
+      </div>
+      <div class="h-px w-full bg-primary"></div>
+      <div
+        class="container flex flex-col justify-between pt-7 text-center lg:flex-row lg:text-left"
+      >
+        <aside>
+          Copyright © 2024 Design & Developed by
+          <a
+            href="https://raddito.net/"
+            target="_blank"
+            class="text-primary underline hover:text-primary-dark hover:no-underline"
+            >Raddito LLC</a
+          >.
+        </aside>
+        <aside>
+          <ul class="flex items-center justify-center gap-4">
+            <li class="flex items-center gap-2">
+              <i class="far fa-check-circle text-primary"></i>
+              <a href="#" class="transition hover:text-primary">Privacy</a>
+            </li>
+
+            <li class="flex items-center gap-2">
+              <i class="far fa-check-circle text-primary"></i>
+              <a href="#" class="transition hover:text-primary">Term</a>
+            </li>
+
+            <li class="flex items-center gap-2">
+              <i class="far fa-check-circle text-primary"></i>
+              <a href="#" class="transition hover:text-primary">Disclaimer</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
