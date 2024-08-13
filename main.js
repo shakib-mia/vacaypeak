@@ -60,7 +60,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 AOS.init({
-  once: true,
+  // once: true,
 });
 
 $(document).ready(function () {
