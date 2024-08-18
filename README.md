@@ -2,7 +2,7 @@
 
 ## Description
 
-**VacayPeak HTML Template with Vite and Tailwind CSS**
+**VacayPeak - Travel HTML Template with Vite and Tailwind CSS**
 
 VacayPeak is your gateway to extraordinary travel experiences, designed to create unforgettable memories as you explore the wonders of the world. Built with Vite and Tailwind CSS, VacayPeak ensures optimal performance and an immersive user experience, catering to travelers seeking customized, seamless, and stress-free holidays.
 
