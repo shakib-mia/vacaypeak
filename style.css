@@ -52,16 +52,19 @@ nav #nav-check:checked + ul li {
   @apply container;
 }
 
+.button,
 button {
-  @apply text-nowrap rounded-lg bg-primary px-4 py-4 font-montserrat text-white ring-primary ring-offset-2 transition hover:bg-primary-dark active:ring-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:!bg-transparent disabled:hover:!text-primary lg:px-8 lg:py-4;
+  @apply inline-block text-nowrap rounded-lg bg-primary px-4 py-4 font-montserrat text-white ring-primary ring-offset-2 transition hover:bg-primary-dark active:ring-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:!bg-transparent disabled:hover:!text-primary lg:px-8 lg:py-4;
 }
 
+.button.sm,
 button.sm {
-  @apply rounded-full px-4 py-1 leading-[22px];
+  @apply inline-block rounded-full px-4 py-1 leading-[22px];
 }
 
+.button.btn-outline,
 button.btn-outline {
-  @apply rounded-lg border border-primary bg-transparent text-black hover:text-primary;
+  @apply inline-block rounded-lg border border-primary bg-transparent text-black hover:text-primary;
 }
 
 .subheading {
